@@ -1,6 +1,7 @@
 import "dotenv/config";
 import app from "./src/app.js";
 import "colors";
+import "./src/db/database.js";
 
 const server = app.listen(app.get("port"), () => {
   console.log("Server listening on".magenta, `${app.get("port")}`.yellow);
